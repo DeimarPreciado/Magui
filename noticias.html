@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <link rel="shortcut icon" href="icons/noticias.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v15.0"
+        nonce="QUFnBNuH"></script>
+    <h>
+        <header class="container">
+            <div class="cabeza">
+                <div class="hora"
+                    style="text-align: left; padding-block: 15px; color: rgba(255, 230, 187, 0.753); font-size: 18px;">
+                    <img src="icons/calendario.png">
+                    <script>
+                        var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                        var f = new Date();
+                        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+                    </script>
+                </div>
+
+                <h1>Noticias (Magüí).</h1>
+                <p class="p">Este es el portal de las noticias más destacadas o relevantes, de los diversos
+                    acontecimientos
+                    ocurridos en el municipio de Magüí Payán.
+                </p>
+
+                <!--menu-->
+                <div class="dropdown">
+                    <button class="dropbtn" style="display: flex;">Categorias
+                        <img src="icons/angulo-hacia-abajo.png" style="width: 16px; padding: 2px 8px;">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="index.html">Informate</a>
+                        <a href="cultuEco.html">Cultura y Economia</a>
+                        <a href="#" style="background-color: rgb(255, 255, 255); color: red;" id="noticias">Noticias</a>
+                        <a href="#foote">Contactos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--crear una alerta-->
+            <script>
+                document.getElementById('noticias').onclick = function () {
+                    alert('Ya te encuentras en el portal de Noticias :(');
+                }
+            </script>
+
+            <div class="informacion">
+                <h2>Relevantes.
+                    <hr>
+                </h2>
+
+                <div class="noti_noReci">
+                    <div class="noti">
+                        <h3>Desmantalamiento de mineria</h3>
+                        <p class="hl">Fecha: 10 Oct 2022</p>
+                        <p style="text-align: justify;">Según informes de investigación, por medio de un operativo a
+                            cargo
+                            del <a
+                                href="https://www.cgfm.mil.co/es/blog/se-crea-el-comando-contra-el-narcotrafico-y-amenazas-transnacionales">
+                                comando Contra el Narcotráfico y Amenazas Transnacionales CONAT</a> del Ejército
+                            Nacional
+                            lograron desmantelar 10 unidades de producción minera, en el municipio de Magüi Payán.
+                            Donde se incautó:
+                        <ul>
+                            <li> cinco retroexcavadoras </li>
+                            <li>Cinco clasificadoras</li>
+                            <li> Un motor industrial</li>
+                        </ul>
+                        <a href="https://www.rcnradio.com/etiquetas/magui-payan" style="font-size: 14px; 
+                        text-decoration: underline; color: blueviolet;">más info.</a>
+                        </p>
+                    </div>
+
+                    <div class="noti_12">
+                        <div class="noti_1">
+                            <h3>Deslizamiento en zonas del minicipio.</h3>
+                            <p class="hl">Fecha: 21 oct 2022</p>
+                            <iframe class="iframe" src="https://www.youtube.com/embed/yUmGT6n3lrc">
+                            </iframe>
+                        </div>
+                        <div class="noti_2">
+                            <h3>Combate entre grupos ilegales.</h3>
+                            <p class="hl">Fecha: 29 ago 2022</p>
+                            <iframe class="iframe" src="https://www.youtube.com/embed/Sn1v1tQV23o">
+                            </iframe>
+                            <p>No se detienen los enfrentamientos entre grupos armados, por la toma de territorios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="space" style="padding: 10px;"></div>
+
+        <section id="app" style="background-image: linear-gradient(360deg, #2c2c2ca9 0%, #0e0d0ddc 100%);
+     color: white;">
+            <div class="fb-comments" data-href="https://deimarpreciado.github.io/Magui/noticias.html" data-width="100%"
+                data-numposts="3" data-colorscheme="dark"></div>
+        </section>
+
+        <div class="space" style="padding: 10px;"></div>
+        <footer class="foot">
+            <div class="foot_conta" id="foote">
+                <div class="alca" style="color: whitesmoke;">
+                    <h5>Alcaldia Municipal.
+                        <hr>
+                    </h5>
+                    <p>Para obtener más información referente al mismo,
+                        comunicarse a través de la página oficial de la
+                        alcaldía municipal, solo haciendo <a href="http://www.maguipayan-narino.gov.co/">Clik Aquí</a>.
+                    </p>
+                </div>
+
+                <div class="contacto">
+                    <div class="usuario"
+                        style="filter: invert(10%) sepia(11%) saturate(7385%) hue-rotate(317deg) brightness(112%) contrast(117%);">
+                        <img src="icons/usuario.png">
+                    </div>
+                    <p class="autor" style="padding: 0 8px; color: whitesmoke;">
+                        &copy;Deiner Ordoñez <em style="color: #a7a7a7; font-size: 12px;">"Creador"</em> </p>
+                </div>
+            </div>
+
+            <div id="foote" class="conta" style="text-align: center; padding-top: 10px;">
+
+                <a href="https://www.facebook.com/deinermartin.preciado"><img src="icons/facebook.png"
+                        style="padding: 0 5px; animation: latidos .9s infinite;"></a>
+
+                <a href="https://www.instagram.com/deimarpreciado/"><img src="icons/instagram.png"
+                        style="padding: 0 5px; width: 30px; animation: latidos .9s infinite;"></a>
+
+                <a href="https://twitter.com/DeimarPreciad"><img src="icons/logotipo-de-twitter.png"
+                        style="padding: 0 5px; width: 30px; animation: latidos .9s infinite;"></a>
+                <p style="color: whitesmoke; font-size: 14px; text-align: center;">Contactos de Autor!</p>
+            </div>
+        </footer>
+    </h>
+</body>
+
+<style>
+    @keyframes latidos {
+        from {
+            transform: none;
+        }
+
+        50% {
+            transform: scale(0.9);
+        }
+
+        to {
+            transform: none;
+        }
+    }
+
+    body {
+        height: 100%;
+        background-repeat: no-repeat;
+        background: url(../projectMagui/img/image2.jpg) no-repeat center center fixed;
+        background-size: 100% 100%;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    .dropbtn {
+        background-color: #442001ad;
+        color: white;
+        padding: 14px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 7px 7px 5px #221111;
+    }
+
+    .dropdown {
+        padding-top: 20px;
+        text-align: left;
+        width: 11%;
+    }
+
+    .dropdown:active {
+        transform: translateY(2px);
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #302f2f;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.466);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: rgba(0, 0, 0, 0.63);
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        box-shadow: 5px 5px 5px #221111;
+        color: rgb(248, 233, 206);
+        font-style: normal;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color: rgb(184, 0, 0);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #5e2d02d0;
+    }
+
+    .iframe {
+        width: 440px;
+        height: 290px;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .cabeza {
+        background-image: linear-gradient(180deg, rgba(64, 64, 64, 0.473) 0%, #000000 100%);
+        padding: 5%;
+        text-align: center;
+        width: 85%;
+        margin: 0 auto;
+        color: white;
+    }
+
+    hr {
+        border: 1px solid rgb(1, 54, 50);
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .informacion {
+        background-image: linear-gradient(180deg, #2e2d2d81 0%, #000000 100%);
+        padding: 5%;
+        width: 85%;
+        margin: 0 auto;
+        border: 1px solid rgba(245, 222, 179, 0.267);
+    }
+
+    h2 {
+        width: 85%;
+        margin: 0 auto;
+        color: white;
+        font-size: 30px;
+    }
+
+    h3 {
+        border: 1px solid rgba(46, 1, 1, 0.719);
+        background-color: rgba(0, 0, 0, 0.541);
+        padding: 4px;
+        font-size: 18px;
+    }
+
+    .noti_noReci {
+        width: 85%;
+        margin: 0 auto;
+        gap: 3em;
+        overflow: hidden;
+    }
+
+    .noti_12 {
+        display: flex;
+        margin: 0 auto;
+        gap: 3em;
+        overflow: hidden;
+    }
+
+    .noti_1 {
+        color: rgb(212, 212, 212);
+        font-size: 17px;
+    }
+
+    .noti_2 {
+        color: rgb(212, 212, 212);
+        font-size: 17px;
+    }
+
+    .noti {
+        color: rgb(216, 212, 212);
+        font-size: 17px;
+    }
+
+    h {
+        font-family: 'century';
+    }
+
+    .hl {
+        color: rgb(83, 83, 83);
+        font-style: italic;
+    }
+
+    .foot {
+        padding: 2.1%;
+        background-image: linear-gradient(180deg, #20202081 0%, #000000 100%);
+        position: relative;
+        z-index: 1;
+        border-radius: 14px;
+        box-shadow: 0 14px rgb(2, 2, 2);
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(96, 142, 241);
+        font-style: italic;
+    }
+
+    .foot_conta {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        gap: 10em;
+        overflow: hidden;
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 29%;
+    }
+
+    .alca a {
+        color: #dddddd96;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .alca {
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    a:hover {
+        color: rgba(255, 0, 0, 0.582);
+    }
+
+    @media only screen and (max-width: 1200px) {
+
+        .fondo {
+            width: 100%;
+            height: 310%;
+        }
+
+        .iframe {
+            width: 340px;
+            height: 290px;
+        }
+
+        .capa {
+            width: 100%;
+            height: 310%;
+        }
+
+        .foot_conta {
+            width: 90%;
+            gap: 3em;
+            font-size: 14px;
+        }
+
+        .contacto {
+            width: 29%;
+        }
+    }
+
+    @media only screen and (max-width: 1060px) {
+        .iframe {
+            width: 290px;
+            height: 290px;
+        }
+
+        .hl {
+            font-size: 12px;
+        }
+
+        h2 {
+            padding-top: 10px;
+            font-size: 16px;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        .noti {
+            font-size: 15px;
+        }
+
+        .noti_2 p {
+            font-size: 15px;
+
+        }
+
+        .fondo {
+            height: 310%;
+        }
+
+        .capa {
+            height: 310%;
+        }
+
+    }
+
+    @media(max-width: 896px) {
+        .noti_12 {
+            display: block;
+        }
+
+        .noti {
+            font-size: 14px;
+        }
+
+        .hl {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .iframe {
+            width: 490px;
+            height: 240px;
+            display: block;
+            margin: auto;
+        }
+
+        .foot_conta {
+            width: 90%;
+            gap: 5em;
+            font-size: 13px;
+        }
+
+        .contacto {
+            width: 58%;
+        }
+
+        li {
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 15px;
+        }
+    }
+
+    @media(max-width: 700px) {
+
+        .iframe {
+            width: 350px;
+            height: 220px;
+        }
+
+        .dropbtn {
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+
+        .dropdown {
+            padding-top: 33px;
+        }
+
+        .dropdown-content {
+            min-width: 154px;
+            font-size: 14px;
+        }
+
+        .noti_1 {
+            font-size: 14px;
+        }
+
+        .noti_2 {
+            font-size: 14px;
+        }
+
+        .p {
+            font-size: 13px;
+        }
+
+        .foot_conta {
+            gap: 2em;
+            font-size: 12px;
+        }
+
+        .contacto {
+            width: 90%;
+        }
+
+        h5 {
+            font-size: 13px;
+        }
+    }
+
+    @media(max-width: 507px) {
+
+        .iframe {
+            width: 330px;
+            height: 210px;
+        }
+
+        .noti_1 {
+            font-size: 14px;
+        }
+
+        .noti_2 {
+            font-size: 14px;
+        }
+
+        .noti {
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 17px;
+        }
+
+        .p {
+            font-size: 13px;
+        }
+
+        .fondo {
+            height: 320%;
+        }
+
+        .capa {
+            height: 320%;
+        }
+
+        .contacto {
+            width: 187%;
+        }
+
+        h5 {
+            font-size: 13px;
+        }
+    }
+
+    @media(max-width: 480px) {
+
+        .fondo {
+            height: 360%;
+        }
+
+        .iframe {
+            width: 215px;
+            height: 190px;
+        }
+
+        .capa {
+            height: 360%;
+        }
+
+        .foot_conta {
+            font-size: 13px;
+        }
+
+        .contacto {
+            width: 354%;
+        }
+    }
+</style>
+
+</html>
